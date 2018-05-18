@@ -10,16 +10,16 @@ theme: juanbrujo/cleaver-beerjs
 
 --
 
-# Cata CSS
+# Cata CSS 💜
 ## Base and low level components
 
 --
 
-# Los contras de CSS (o del mundo CSS)
+# Los contras de CSS (o del mundo CSS) 
 
-* No depender de un preprocesador (SASS, LESS, Stylus)
+* Depender de un preprocesador (SASS, LESS, Stylus)
 * Scope, naming, conventions
-* Integración con diferentes stacks o frameworks
+* Diferentes stacks o frameworks
 * Portabilidad del código
 * Mantención y escalabilidad
 
@@ -30,7 +30,11 @@ theme: juanbrujo/cleaver-beerjs
 
 --
 
-# Core features
+# Nace Cata 💜
+
+--
+
+# Core features ✔️
 
 * PostCSS
 * Orientado a componentes (scope)
@@ -40,7 +44,7 @@ theme: juanbrujo/cleaver-beerjs
 
 --
 
-# Scope
+# Scope 👀
 ## BEM + SuitCSS
 
 ```  
@@ -55,10 +59,22 @@ theme: juanbrujo/cleaver-beerjs
 <img src="http://snappyimages.nextwavesrl.netdna-cdn.com/img/d2d3afb7038d03a765e4d377cfd84bc5.png" alt="">
 --
 
-# Módulos CSS + NPM
+# Módulos CSS + NPM 📦
 ## Simples modulos encapsulados
 
 <img src="http://snappyimages.nextwavesrl.netdna-cdn.com/img/1965e411cf9cde2416afcfa4839296b4.png" alt="image">
+
+--
+
+# Cata
+
+<img src="http://snappyimages.nextwavesrl.netdna-cdn.com/img/c99ec57f18dfc0a284e3c2fe8b520954.png" alt="">
+
+--
+
+# Cata + 😀
+
+<img src="http://snappyimages.nextwavesrl.netdna-cdn.com/img/27e90def3a47178fa6b2653171244749.png" alt="">
 
 --
 
@@ -73,13 +89,15 @@ npm run lint
 https://github.com/raulghm/cata-components-button
 --
 
-# Cata
-## Starting...
+# Cata 🏁
 
 
 Terminal
 ```bash
-yarn add cata-base cata-variables cata-breakpoints cata-components-button
+yarn add cata-base
+yarn add cata-variables
+yarn add cata-breakpoints
+yarn add cata-components-button
 ```
 
 CSS
@@ -88,7 +106,7 @@ CSS
 @import "cata-variablaes";
 @import "cata-breakpoints";
 
-...
+body {...}
 ```
 --
 
@@ -97,8 +115,12 @@ CSS
 ```
 @import "cata-components-button";
 
+:root {
+  --color-button: #bbb;
+}
+
 .Button--default {
-  background-color: #eee;
+  background-color: var(--color-button);
   color: #444;
   border-color: #d9d9d9 #d9d9d9 #ccc;
   border-radius: 2px;
@@ -109,7 +131,7 @@ CSS
 
 # CSS Pre procesador
 
-Webpack / Vue
+Webpack / Vue / React / ...
 
 ```
 {
